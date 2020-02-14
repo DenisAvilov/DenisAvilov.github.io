@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Library</title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<main>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<aside class="header-logo my_flex">
+						<h2>Films library</h2>
+					</aside>
+				</div>
+				<div class="col-8">
+					<div class="header-wrap my_flex">
+						<div class="my_flex" id="header-btn">
+							<span class="plus">+</span>
+							<p>Add new film</p>
+						</div>
+					</div>
+				</div>
+				<div class="col"></div>
+			</div>
+		</div>
+	</header>
+</main>
+<div class="container">
+	<div class="row">
+		<div class="col"></div>
+		<div class="col-8">
+			<form id="form" class="d-none">
+				<div class="form-group">
+					<label for="title" class="col-form-label-sm">TITLE</label>
+					<input type="text" class="form-control" value="Martian" name="library-title" id="title">
+
+				</div>
+				<div class="form-group">
+					<label for="year" class="col-form-label-sm">YEAR</label>
+					<input type="text" class="form-control" value="2016" name="library-year" id="year">
+
+				</div>
+				<div class="form-group">
+					<label for="country" class="col-form-label-sm">COUNTRY</label>
+					<input type="text" class="form-control" value="USA" name="library-country" id="country">
+
+				</div>
+				<div class="form-group">
+					<label for="genre" class="col-form-label-sm">GENRE</label>
+					<input type="text" class="form-control" value="Fantasy" name="library-genre" id="genre">
+
+				</div>
+				<div class="form-group">
+					<label for="poster" class="col-form-label-sm">POSTER (LINK)</label>
+					<input type="text" class="form-control"
+						   value="http://fonday.ru/images/tmp/3/9/original/39158Hmc3JUfx2W1o7dPD22SCN0.jpg"
+						   name="poster" id="poster">
+				</div>
+				<div class="form-group">
+					<label for="description" class="col-form-label-sm">ACTOR</label>
+					<input type="text" class="form-control" value="Actor" name="library-actor" id="actor">
+				</div>
+				<div class="form-group">
+					<label for="description" class="col-form-label-sm">DESCRIPTION</label>
+					<input type="text" class="form-control" value="description" name="library-description"
+						   id="description" aria-describedby="description">
+				</div>
+				<div>
+					<button type="submit" class="btn my_btn my_btn-cancel" id="cancel">Cancel</button>
+					<button type="submit" class="btn my_btn" id="add-film">Save</button>
+				</div>
+			</form>
+			<div class="col-12">
+				<div class="row library-panel">
+
+				</div>
+			</div>
+		</div>
+		<div class="col"></div>
+
+	</div>
+</div>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
