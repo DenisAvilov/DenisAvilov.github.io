@@ -1,0 +1,26 @@
+@media screen and (min-width: 320px) {
+  .top-line .icon-menu {
+    display: none; }
+  .top-line #links {
+    display: none; } }
+
+@media screen and (min-width: 320px) and (max-width: 990px) {
+  .top-line .icon-menu {
+    display: block; }
+  .top-line .links {
+    display: none; }
+    .top-line .links ul {
+      margin-top: 10px;
+      padding-left: 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .top-line .links ul li {
+        margin-bottom: 15px;
+        width: 100%; } }
