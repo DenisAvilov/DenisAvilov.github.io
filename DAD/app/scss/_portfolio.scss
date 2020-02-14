@@ -1,0 +1,91 @@
+@import "variables";
+
+
+
+.portfolio{
+    &-content{
+       padding: 20% 11% 12%;
+         h1 {
+        position: relative;
+           color: #141313;
+           font-family: Conv_GoshaSans-Bold_my;
+           font-size: 92px;
+           font-weight: 700;
+           line-height: 85px;
+      }
+        .before {
+        position: relative;
+        z-index: 1;
+        &:before {
+          position: absolute;
+          content: "";
+          top: 74px;
+          width: 94%;
+          height: 27px;
+          left: -6px;
+          background-color: $main-color-btn;
+          z-index: -1;
+        }
+      }
+  }
+
+  @media screen and (max-width: 900px) {
+    &-content h1{
+      font-size: 60px;
+      line-height: 60px;
+    }
+    &-content{
+      .before:before{
+            top: 53px;
+            width: 94%;
+            height: 17px;
+          }
+    }
+
+    .p-portfolio-section{
+      .gallery{
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+  @media screen and (max-width: 800px) {
+    &-content h1{
+      font-size: 49px;
+
+    }
+    &-content{
+      .before:before{
+            top: 39px;
+          }
+    }
+  }
+  @media screen and (max-width: 32.12rem) {
+    &-content h1{
+      font-size: 45px;
+      line-height: 50px;
+      }
+  }
+  @media screen and (max-width: 28.12rem) {
+    &-content h1{
+      font-size: 37px;
+      }
+    &-content{
+      .before:before{
+        height: 11px;
+        top: 32px;
+        left: -2px;
+          }
+    }
+  }
+  @media screen and (max-width: 21.25rem) {
+    &-content h1{
+      font-size: 28px;
+      }
+    &-content{
+      .before:before{
+        top: 23px;
+          }
+    }
+  }
+}

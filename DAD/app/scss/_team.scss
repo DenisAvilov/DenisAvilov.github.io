@@ -1,0 +1,467 @@
+@import "variables";
+
+.team {
+  footer .form .btn, .header-form .form .btn {
+    padding: 6px 58px 12px 21px;
+  }
+  .before {
+    position: relative;
+    z-index: 1;
+    &:before {
+      position: absolute;
+      content: "";
+      top: 62px;
+      width: 103%;
+      height: 16px;
+      left: 0;
+      background-color: #ffe000;
+      z-index: -1;
+    }
+  }
+  h1 {
+    font: 700 75px/72px Gotham Pro;
+  }
+  h2 {
+
+  }
+  &-top {
+    padding: 257px 0 150px;
+  }
+  &-content {
+    padding: 0 15px;
+  }
+  &-f {
+    flex-basis: 42%;
+  }
+  &-s {
+    flex-basis: 42%;
+    h2 {
+      margin-bottom: 40px;
+      color: #141313;
+         font: 700 24px/30px Gotham Pro;
+    }
+    p {
+      margin-bottom: 30px;
+      line-height: 26px;
+    }
+
+  }
+  .btn {
+    padding: 14px 58px 12px 21px;
+    &:before {
+      background-image: url("../img/team/srting_black.png");
+      top: 17px;
+      right: 14px;
+    }
+  }
+}
+.team .business {
+  background: black;
+  background-image: url("../img/team/animation_team.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  color: white;
+  padding: 140px 0;
+  h1 {
+    color: white;
+  }
+  &-title {
+    h1 {
+      margin-bottom: 120px;
+    }
+    h3 {
+      margin-bottom: 35px;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 36px;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+    margin-bottom: 200px;
+    &-lien {
+      position: relative;
+      &:after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 1px;
+        background-color: rgba(255, 255, 255, 0.1);
+        left: -140px;
+        top: 0;
+      }
+      &:before {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 1px;
+        background-color: rgba(255, 255, 255, 0.1);
+        right: -140px;
+      }
+    }
+  }
+  &-logo{
+    position: relative;
+    &:after{
+      position: absolute;
+      content: "";
+      width: 65px;
+      height: 65px;
+      top: -97px;
+      left: 0;
+      background-image: url("../img/team/team.png");
+      background-position: -11px 0;
+      background-repeat: no-repeat;
+
+    }
+    &_2:after{
+      background-position: -99px 0;
+    }
+    &_3:after{
+      background-position: -184px 0;
+    }
+  }
+  &-differ {
+    h1 {
+      margin-bottom: 30px;
+
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      li {
+        flex-basis: 48%;
+
+      }
+    }
+    p {
+      font-family: Conv_GothamPro_Light;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 45px;
+    }
+  }
+}
+.team .persons{
+  max-width: 120rem;
+  margin: auto;
+  padding: 150px 0 75px;
+  background-color: white;
+  h2{
+    font: 700 75px/72px Gotham Pro;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &-slider{
+    .owl-nav{
+          span{ display: none;}
+          .team-owl-prev,.team-owl-next{
+            border: 2px solid $main-color-btn;
+            border-radius: 10em;
+            width: 50px;
+            height: 50px;
+            background-color: inherit;
+            position: relative;
+            margin-left: 10px;
+            margin-right: 10px;
+            &:before{
+              position: absolute;
+              content: "";
+              background-image: url("../img/team/srting_black.png");
+              background-repeat: no-repeat;
+              background-position: center;
+              width: 20px;
+              height: 20px;
+              top: 14px;
+              transform: rotate(179deg);
+              left: 14px;
+            }
+          }
+      .team-owl-next{
+                 &:before{
+                   transform: rotate(0deg);
+                 }
+                }
+        }
+  }
+  &-item{
+    color: #141313;
+    font-family: Gotham Pro;
+    line-height: 24px;
+    figure{
+       min-width: 250px;
+      max-width: 250px;
+      max-height: 465px;
+       overflow: hidden;
+      img{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      figcaption{
+        text-align: center;
+        h3{
+          font-size: 24px;
+          font-weight: 700;
+        }
+        span{
+          font-family: Conv_GothamPro_Light;
+          font-size: 14px;
+        }
+      }
+    }
+
+  }
+}
+@media screen and (max-width: 54.5rem) {
+  .team {
+    &-content {
+      justify-content: center !important;
+    }
+    footer .form .btn, .header-form .form .btn {
+      line-height: 0;
+    }
+    .btn {
+      margin: auto;
+      display: block;
+      width: 220px;
+      padding: 2px 10px 2px 21px;
+      box-sizing: border-box;
+      &:before {
+        top: 14px;
+      }
+    }
+    &-top {
+      padding: 100px 0 50px;
+    }
+    &-f {
+      margin-bottom: 40px;
+    }
+    &-s {
+      flex-basis: 70%;
+      h2 {
+        text-align: center;
+      }
+    }
+
+  }
+  .team .business {
+    padding: 100px 10px;
+    &-title{
+      &-lien{
+        &:after{
+          left: -55px;
+        }
+        &:before{
+          right: -55px;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+
+  .team .business {
+      padding: 100px 10px;
+      &-title{
+        margin-bottom: 0;
+        h1{
+          margin-bottom: 100px;
+        }
+        &-lien{
+          &:after{
+            left: -33px;
+          }
+          &:before{
+            right: -33px;
+          }
+        }
+        ul{
+          flex-direction: column;
+          align-items: center;
+          li{
+            margin-bottom: 125px;
+            h3{
+              text-align: center;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+      &-logo{
+        &_1:after{
+          top: -75px;
+          left: 93px;
+        }
+        &_2:after{
+          top: -75px;
+          left: 75px;
+        }
+        &_3:after{
+          top: -75px;
+          left: 56px;
+                }
+      }
+    }
+}
+
+@media screen and (max-width: 32.12rem) {
+  .team {
+    .btn {
+      &:before {
+        top: 13px;
+      }
+    }
+    &-f {
+      h1 {
+        text-align: center;
+      }
+    }
+    &-s {
+      flex-basis: 90%;
+      p {
+        margin-bottom: 20px;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 25px;
+      }
+    }
+    main .o-client {
+      padding: 50px 10px;
+      h1 {
+            margin-bottom: 0;
+          }
+    }
+  }
+
+  .team h1 {
+      font: 700 70px/66px Gotham Pro;
+  }
+}
+
+@media screen and (max-width: 28.12rem) {
+  .team {
+    .btn {
+      &:before {
+        top: 13px;
+      }
+    }
+    .before::before {
+      top: 55px;
+      width: 101%;
+      height: 13px;
+    }
+    h1{
+      font: 700 58px/66px Gotham Pro;
+      text-align: center;
+    }
+    &-f {
+      h1 {
+        text-align: center;
+        font-size: 4em;
+        line-height: 60px;
+      }
+    }
+  }
+  .team .business {
+        padding: 100px 10px;
+        &-title{
+          &-lien{
+            &:after{
+              left: -33px;
+            }
+            &:before{
+              right: -33px;
+            }
+          }
+        }
+      }
+}
+
+@media screen and (max-width: 21.25rem) {
+  .team {
+    .btn {
+      &:before {
+        top: 13px;
+      }
+    }
+    h1{
+      font: 700 43px/43px Gotham Pro;
+       padding-bottom: 0;
+    }
+    .before::before {
+      top: 39px;
+      width: 101%;
+      height: 10px;
+    }
+    &-f {
+      h1 {
+        font-size: 3em;
+        line-height: 47px;
+        margin-bottom: 30px;
+      }
+    }
+    .header-form .form .btn{
+      height: 36px;
+      padding: 11px 58px 12px 21px;
+      font-size: 9px;
+      margin-top: 20px;
+    }
+    .business-differ{
+      ul{
+        flex-direction: column;
+        text-align: center;
+        p{
+          line-height: 30px;
+        }
+        li{
+          margin-bottom: 95px;
+        }
+      }
+    }
+    main .o-client h1{
+      margin-bottom: 30px;
+    }
+    main .b-box p{
+      font-size: 16px;
+
+          line-height: 22px;
+          max-height: 125px;
+          min-height: 95px;
+
+          margin-bottom: 10px;
+          text-align: center;
+    }
+    main .b-box header figure {
+        margin-left: 18px;
+    }
+    main .b-box header > div{
+      text-align: center;
+    }
+    footer .form .btn{
+      padding: 10px 58px 12px 21px;
+    }
+    .header-form .form .btn:before{
+      background-size: 90%;
+      top: 9px;
+    }
+    .header-form .form input{
+      margin-bottom: 20px;
+    }
+    .business-title-lien:after, .business-title-lien:before{
+      display: none;
+    }
+  }
+}
