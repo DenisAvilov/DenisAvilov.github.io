@@ -10,66 +10,110 @@
      <link rel="stylesheet" href="css/styles.css">
      <link rel="stylesheet" href="css/responsive.css">
      <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
-
+     <link rel="stylesheet" href="libs/OwlCarousel/dist/assets/owl.carousel.css"> 
    </head>
    <body>
-       <section >
-         <div class="container">
-             <div class="menu-up">
-                 <ul class="menu-linc">
-                     <li id="menu-up-linc"><a href="#"> <strong>грн/</strong>eu</a></li>
-                     <li><a href="#"> Личный кабинет</a></li>
-                     <li><a href="#"> Что-то еще</a></li>
-                     <li><a href="#"> Что-то еще</a></li>
-                 </ul>
+      
+       <section class="header">         
+            <section class="top-line">
+                <div class="container">
+                 <div class="row">
+                   <div class="menu-up">
+                       <ul class="menu-linc">
+                           <li id="menu-up-linc"><a href="#"> грн/eu</a></li>
+                           <li><a href="#"> Личный кабинет</a></li>
+                           <li><a href="#"> Что-то еще</a></li>
+                          
+                       </ul>      
+                       <form>
+                           <input class="search-filed" >
+                           <input name="search-submit" type="submit" value="">
+                       </form>
+       
+                   </div>
+                 </div>
+                </div>
+            </section> 
+            <div class="content"> 
+            <header class="container">
+                       <div class="row">
+                        <nav class="nav-wrapper">
+                          <a href="#" class="logo"> <img src="img/icons/logo.png" alt="Logo"></a> 
+                            <div class="burger">
+                                <a class="burger_trigger" href="##"></a>
+                            </div>
+                            <ul class="menu">
+                                <li class="comers-icon comers_home"><a href="#"></a></li>
+                                <li class="menu-link"><a href="#">О нас</a></li>
+                                <li class="menu-link"><a href="#">Категории</a></li>
+                                <li class="menu-link"><a href="#">Новости</a></li>
+                                <li class="menu-link"><a href="#">Акции</a></li>
+                                <li class="menu-link"><a href="#">Новости</a></li>
+                            </ul>
+                            <ul class="comers">
+                                <li class="comers-icon comers_revers"><a href="#"></a></li>
+                                <li class="comers-icon comers_hard"><a href="#"></a></li>
+                                <li class="comers-icon comers_comers"><a href="#"></a></li>
+                            </ul>
+                        </nav>           
 
-                 <form action="q" method="get" name="Search" >
-                     <input name="search-filed" type="search">
-                     <input name="search-submit" type="submit" value="">
-                 </form>
+                       </div>
+                                <!-- <div class="circle">
+                            <ul class="elips">
+                                <li class="icon-elips elips_1"><a class="elips-active" href="##"></a></li>
+                                <li class="icon-elips elips_2"><a class="elips-active" href="##"></a></li>
+                                <li class="icon-elips elips_3"><a class="elips-active" href="##"></a></li>
+                            </ul>
+                        </div> -->
 
-             </div>
-         </div>
-       </section>
-       <section class="header">
-       <header class="container">
-           <nav class=" nav-wrapper">
-               <img src="img/icons/logo.png" alt="" class="logo">
-               <div class="burger">
-                   <a class="burger_trigger" href="##"></a>
-               </div>
-               <ul class="menu">
-                   <li class="comers-icon comers_home"><a href="#"></a></li>
-                   <li class="menu-link"><a href="#">О нас</a></li>
-                   <li class="menu-link"><a href="#">Категории</a></li>
-                   <li class="menu-link"><a href="#">Новости</a></li>
-                   <li class="menu-link"><a href="#">Акции</a></li>
-                   <li class="menu-link"><a href="#">Новости</a></li>
-               </ul>
-               <ul class="comers">
-                   <li class="comers-icon comers_revers"><a href="#"></a></li>
-                   <li class="comers-icon comers_hard"><a href="#"></a></li>
-                   <li class="comers-icon comers_comers"><a href="#"></a></li>
-               </ul>
-           </nav>
-            <main role="main">
-                <article>
-                   <H1>Сдесь должен быть </H1>
-                     <p>
-                         Умный слоган.Напутствие
-                     </p>
-                 </article>
-            </main>
-                <div class="btn"><a class="btn-next" href="#">Читать подробнее</a></div>
+            </header>           
+           </div>
+             
+            <div class="owl-carousel owl-theme my_slider">
+                    <div class="item" style="background-image: url('img/block/baner-min.png');">  
+                        <div class="container">                   
+                            <div class="row">                     
+                                    <article class="content-offer">
+                                        <H1>Сдесь должен быть </H1>
+                                            <p>
+                                                Умный слоган. Напутствие
+                                            </p>
+                                    </article>                  
+                            </div>                 
+                        </div>             
+                    </div>
+                    <div class="item" style="background-image: url('https://hyser.com.ua/images/2019/10/28/uuNHpimZU4eMKkFxI7s6jRrmqTnlcX17JEWb8wAj.jpeg');">  
+                        <div class="container">                   
+                            <div class="row">                     
+                                    <article class="content-offer">
+                                        <H1>Одна из первых работ</H1>
+                                            <p>
+                                               Оставил без изменений, только слайдер добавил!)
+                                            </p>
+                                    </article>                  
+                            </div>                 
+                        </div>             
+                    </div>
+                    <div class="item" style="background-image: url('https://w-dog.ru/wallpapers/10/6/345743562111829.jpg');">  
+                        <div class="container">                   
+                            <div class="row">                     
+                                    <article class="content-offer">
+                                        <H1>Рыбки в аквариуме</H1>
+                                            <p>
+                                                Успокаивают после эмоционального дня! 
+                                            </p>
+                                    </article>                  
+                            </div>                 
+                        </div>             
+                    </div>
+                </div>
+             <div class="container">
+                 <div class="row">
+                    <div class="btn_read_more"><a  href="#">Читать подробнее </a></div>
+                 </div>
+             </div> 
+            </div>  
 
-         <div class="circle">
-             <ul class="elips">
-                 <li class="icon-elips elips_1"><a class="elips-active" href="##"></a></li>
-                 <li class="icon-elips elips_2"><a class="elips-active" href="##"></a></li>
-                 <li class="icon-elips elips_3"><a class="elips-active" href="##"></a></li>
-             </ul>
-         </div>
-       </header>
    </section>
    <section class="block">
        <article class="bl-wrapper container">
@@ -535,6 +579,7 @@
          </div>
   </footer>
   <script src="js/jquery.js"></script>
+  <script src="libs/OwlCarousel/dist/owl.carousel.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
   <script src="js/scripts.js"></script>
  </body>
