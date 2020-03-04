@@ -197,7 +197,7 @@ hr{
 .top-line{
     position: absolute;
     top: 0;
-    background-color: rgba(11,169,182,0.4);
+    background-color: rgba(255,255,255, 0.7);
     left: 0;
     right: 0;  
     z-index: 2;    
@@ -212,14 +212,15 @@ hr{
         transition: opacity 0.3s ease;
     }
 
-.item{
-   
+.item{   
      height: 100vh;
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
      display: flex;     
      align-items: center;
+     position: relative;
+    
     
 }
 
@@ -230,8 +231,19 @@ hr{
     right: 0;
     left: 0;
 }
+.item::after{
+    position: absolute;
+    content: "";
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
 .content-offer{
-    
+    position: relative;
+    z-index: 2;
   
 }
 .content{
@@ -471,15 +483,19 @@ background-position: -3px -6px;
     flex-grow: 1;
     margin: 0 1.5%;
 }
-.name-wrapper{
-    display: flex;
-    justify-content: space-around;
+.grid{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    
+   
+  
+}
+.name-wrapper{   
     padding: 35px 10px 25px;
     box-sizing: border-box;
-    background-color: white;
-    margin: 0 1.5%;
-    flex-wrap: wrap;
-    /*flex-basis: 262px;*/
+    background-color: white;     
+  
 }
 .name-wrapper:hover{
     box-shadow: 0 0 35.6px 4.4px rgba(0, 0, 0, 0.35);
@@ -542,13 +558,15 @@ figcaption p{
     padding-top: 15px;
 }
 .name-wrapper-img{
-    max-width: 100%;
+    max-width: 250px;
 }
 .name-wrapper-img img{
+    object-fit: fill;
+    height: 200;
     width: 100%;
 }
 .form-down{
-    position: relative;
+    position: relative; 
     width: 100%;
 }
 .btn-2{
