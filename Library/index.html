@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Библиотека фильмов</title>
+	<link rel="stylesheet" href="css/libs.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<main>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<aside class="header-logo my_flex">
+						<h2>Бибиотека фильмов</h2>
+					</aside>
+				</div>
+				<div class="col-8">
+					<div class="header-wrap my_flex">
+						<div class="my_flex" id="header-btn">
+							<span class="plus">+</span>
+							<p>Создать описание нового фильма</p>
+						</div> 
+					</div>
+				</div>
+				<div class="col"></div> 
+			</div>
+		</div>
+	</header>
+</main>
+<div class="container">
+	<div class="row">
+		<div class="col"></div>
+		<div class="col-8">
+			<form id="form" class="d-none">
+				<div class="form-group">
+					<label for="title" class="col-form-label-sm">Название</label>
+					<input type="text" class="form-control" value="Запрещенный"  name="library-title" id="title">
+
+				</div>
+				<div class="form-group">
+					<label for="year" class="col-form-label-sm">Год выпуска</label>
+					<input type="text" class="form-control" value="2019" name="library-year" id="year">
+
+				</div>
+				<div class="form-group">
+					<label for="country" class="col-form-label-sm">Страна</label>
+					<input type="text" class="form-control" value="Украина"  name="library-country" id="country">
+
+				</div>
+				<div class="form-group">
+					<label for="genre" class="col-form-label-sm">Жанр</label>
+					<input type="text" class="form-control" value="На реальных событиях"  name="library-genre" id="genre">
+
+				</div>
+				<div class="form-group">
+					<label for="poster" class="col-form-label-sm">Сылка на изображение</label>
+					<input type="text" class="form-control"
+						value="https://www.cinema.in.ua/wp-content/uploads/2020/12/xf_140-1.jpg.pagespeed.ic.iK0euC89dT.webp"
+						name="poster" id="poster">
+				</div>
+				<div class="form-group">
+					<label for="description" class="col-form-label-sm">Актер в главной роли</label>
+					<input type="text" class="form-control" value="Дмитрий Ярошенко"  name="library-actor" id="actor">
+				</div>
+				<div class="form-group">
+					<label for="description" class="col-form-label-sm">Описание</label>
+					<input type="text" class="form-control" value="Описание"  name="library-description"
+						id="description" aria-describedby="description">
+				</div>
+				<div>
+					<button type="submit" class="btn my_btn my_btn-cancel" id="cancel">Отмена</button>
+					<button type="submit" class="btn my_btn" id="add-film">Сохранить</button>
+				</div>
+			</form>
+			<div class="col-12">
+				<div class="row library-panel">
+
+				</div>
+			</div>
+		</div>
+		<div class="col"></div>
+
+	</div>
+</div>
+
+<script src="./js/all.js"> </script>
+<script src="./js/common.js"></script>
+
+
+
+</body>
+</html
